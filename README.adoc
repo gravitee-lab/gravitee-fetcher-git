@@ -5,3 +5,17 @@ image:https://ci.gravitee.io/buildStatus/icon?job=gravitee-io/gravitee-fetcher-g
 image:https://badges.gitter.im/Join Chat.svg["Gitter", link="https://gitter.im/gravitee-io/gravitee-io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"]
 endif::[]
 
+
+== Documentation
+
+This plugin allow Gravitee.io to fetch content from a git repository.
+It's primarily used to fetch documentation.
+
+**Authentications is currently not supported**.
+
+== Cautions
+This plugin is based on https://eclipse.org/jgit/[JGit].
+The current version of JGit (4.4.0.201606070830-r) doesn't support shallow clones (https://bugs.eclipse.org/bugs/show_bug.cgi?id=475615).
+This means that the entire repository is cloned in a temporary folder.
+
+This could take some times and spaces on your device.
