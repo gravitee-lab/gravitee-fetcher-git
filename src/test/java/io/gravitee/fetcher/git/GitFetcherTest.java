@@ -55,7 +55,7 @@ public class GitFetcherTest {
     @Test
     public void shouldGetExistingFileWithTag() throws Exception {
         GitFetcherConfiguration gitFetcherConfiguration = new GitFetcherConfiguration();
-        gitFetcherConfiguration.setRepository("https://github.com/gravitee-io/gateway.git");
+        gitFetcherConfiguration.setRepository("https://github.com/gravitee-io/gravitee-gateway.git");
         gitFetcherConfiguration.setBranchOrTag("0.1.0");
         gitFetcherConfiguration.setPath("gravitee-gateway-api/pom.xml");
 
