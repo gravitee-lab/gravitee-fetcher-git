@@ -57,8 +57,8 @@ public class GitFetcher implements Fetcher{
             result.close();
             return new FileInputStream(fileToFetch);
         } catch (Exception e) {
-           LOGGER.error(e.getMessage(), e);
-            throw new FetcherException("Unable to fetch git content", e);
+            LOGGER.error(e.getMessage(), e);
+            throw new FetcherException("Unable to fetch git content (" + e.getMessage() + ")", e);
         }
     }
 }
